@@ -1,0 +1,95 @@
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    box-sizing: border-box;
+    color: white;
+    font-family: 'big Shoulders Display';
+
+}
+.cartoes{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7em;
+}
+.titulo{
+    font-weight: 700;
+    font-size: 30px;
+    font-weight: bold;
+    margin:1em 0;
+    text-transform: uppercase;
+}
+.sedans{
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background: hsl(31, 77%, 52%); 
+    padding: 3em 3em 0.8em 3em;
+}
+.suvs{
+    background: hsl(184, 100%, 22%);
+    padding: 3em 3em 0.8em 3em;
+
+}
+.luxury{
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background: hsl(179, 100%, 13%);
+    padding: 3em 3em 0.8em 3em;
+}
+.botao{
+    font-size: 16px;
+    width: 180px;
+    background: white;
+    padding: 1.6em;
+    display: block;
+    border-radius: 5em;
+    border: none;
+    margin:3em 0.5em;
+    cursor: pointer;
+}
+.botao_sedans{
+    color: hsl(31, 77%, 52%);
+}
+.botao_suvs{
+    color: hsl(184, 100%, 22%);
+}
+.botao_luxury{
+    color:  hsl(179, 100%, 13%);
+}
+footer{
+    color: hsl(228, 45%, 44%); 
+    text-align: center;
+}
+@media screen and (min-width:1024px){
+    .cartoes{
+        display: flex;
+        flex-direction: row;
+        padding: 1em;
+    } 
+    .sedans{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1em;
+
+    }  
+    .luxury{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1em;
+
+    }  
+    .botao{
+        width: 200px;
+    }
+    .botao:hover{
+        color: white;
+        border: 2px solid white;
+    }
+    .botao_suvs:hover{
+        background:hsl(184, 100%, 22%) ;
+    }
+    .botao_sedans:hover{
+        background:hsl(31, 77%, 52%) ;
+    }
+    .botao_luxury:hover{
+        background: hsl(179, 100%, 13%);
+    }
+}
